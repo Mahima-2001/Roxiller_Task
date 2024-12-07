@@ -1,0 +1,81 @@
+/* src/App.css */
+input {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.first-container{
+  height: 15%;
+  width: 15%;
+  border-radius: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+/* Container for Pie Chart */
+.pie-chart-container {
+  display: flex;
+  justify-content: flex-end;  /* Align to the right side */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  flex-direction: row-reverse; /* Ensure the pie chart is on the right */
+}
+
+/* Style for the Pie Chart */
+.pie-chart {
+  width: 100%;
+  max-width: 500px;  /* Adjust width */
+  max-height: 400px;  /* Adjust height */
+  height: auto;
+}
+
+/* Responsiveness: On mobile devices */
+@media (max-width: 768px) {
+  .pie-chart-container {
+    justify-content: center;  /* Center on smaller screens */
+    padding: 10px;
+  }
+
+  .pie-chart {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pie-chart-container {
+    padding: 5px;
+  }
+
+  .pie-chart {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
